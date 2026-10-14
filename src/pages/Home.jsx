@@ -45,11 +45,6 @@ export default function Home() {
 
       <section className="section alt-section">
         <div className="container">
-          <div className="section-heading">
-            <p className="eyebrow">Featured pieces</p>
-            <h2>Pieces chosen for character and craftsmanship</h2>
-          </div>
-
           <div className="product-grid featured-grid">
             {featuredProducts.map((product) => (
               <article className="product-card" key={product.id}>
