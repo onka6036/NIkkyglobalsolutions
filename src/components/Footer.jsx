@@ -30,7 +30,7 @@ export default function Footer() {
         <div>
           <h4>Contact</h4>
           <ul className="footer-contact">
-            <li><Mail size={16} /> hello@antiqueaccessories.example</li>
+            <li><Mail size={16} /> info@nikkyglobalsolutions.com</li>
             <li><Phone size={16} /> (213) 461-9850</li>
             <li><MapPin size={16} /> 10800 SaintJames Ave, South Gate, CA 90280</li>
             <li><Clock3 size={16} /> Tue–Sat: 10:00–18:00</li>
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="social-links">
             <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={18} /></a>
             <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><Facebook size={18} /></a>
-            <a href="mailto:hello@antiqueaccessories.example" aria-label="Email us"><Mail size={18} /></a>
+            <a href="mailto:info@nikkyglobalsolutions.com" aria-label="Email us"><Mail size={18} /></a>
           </div>
         </div>
       </div>

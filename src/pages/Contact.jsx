@@ -32,7 +32,7 @@ export default function Contact() {
           <div className="contact-card">
             <h3>Business details</h3>
             <ul className="contact-list">
-              <li><Mail size={18} /> hello@antiqueaccessories.example</li>
+              <li><Mail size={18} /> info@nikkyglobalsolutions.com</li>
               <li><Phone size={18} /> (213) 461-9850</li>
               <li><MessageCircle size={18} /> WhatsApp enquiries available</li>
               <li><MapPin size={18} /> 10800 SaintJames Ave, South Gate, CA 90280</li>
