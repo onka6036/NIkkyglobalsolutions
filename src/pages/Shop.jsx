@@ -103,8 +103,8 @@ export default function Shop({ onQuickEnquire, onViewProduct }) {
             ))
           ) : (
             <div className="empty-state">
-              <h3>No products match your search</h3>
-              <p>Try another term or switch category filters to view more inventory.</p>
+              <h3>No pieces are currently available</h3>
+              <p>Contact us if you would like help sourcing a particular antique.</p>
             </div>
           )}
         </div>

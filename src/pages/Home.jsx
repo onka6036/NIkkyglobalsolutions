@@ -1,8 +1,6 @@
-import { ArrowRight, Award, BadgeCheck, Gem, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, Award, BadgeCheck, ShieldCheck, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { products, services, testimonials } from '../data/catalog';
-
-const featuredProducts = products.filter((product) => product.featured).slice(0, 3);
+import { services, testimonials } from '../data/catalog';
 
 export default function Home() {
   return (
@@ -45,52 +43,13 @@ export default function Home() {
 
       <section className="section alt-section">
         <div className="container">
-          <div className="product-grid featured-grid">
-            {featuredProducts.map((product) => (
-              <article className="product-card" key={product.id}>
-                <div className="product-image-wrap">
-                  <img src={product.image} alt={product.name} loading="lazy" />
-                  <span className="pill">{product.availability}</span>
-                </div>
-                <div className="product-details">
-                  <div className="product-meta-row">
-                    <p>{product.category}</p>
-                    <span className="price-tag">{product.priceLabel}</span>
-                  </div>
-                  <h3>{product.name}</h3>
-                  <p className="muted-text product-description">{product.description}</p>
-                  <div className="product-footer">
-                    <strong>£{product.price.toLocaleString()}</strong>
-                    <Link to="/contact" className="text-button">View details</Link>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">Categories</p>
-            <h2>Explore timeless interiors</h2>
+            <p className="eyebrow">Current availability</p>
+            <h2>No pieces are currently available</h2>
           </div>
-
-          <div className="category-grid">
-            {[
-              'Antique ornaments',
-              'Vintage home décor',
-              'Collectible accessories',
-              'Decorative clocks',
-              'Antique mirrors',
-              'Vintage tableware',
-            ].map((category) => (
-              <div className="info-card category-card" key={category}>
-                <Gem size={28} />
-                <h3>{category}</h3>
-              </div>
-            ))}
+          <div className="empty-state">
+            <p>Our current inventory has been removed. Contact us if you would like help sourcing a particular piece.</p>
+            <Link to="/contact" className="primary-button small">Ask about sourcing</Link>
           </div>
         </div>
       </section>
